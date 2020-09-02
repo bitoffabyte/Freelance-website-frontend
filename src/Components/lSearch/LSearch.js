@@ -5,10 +5,7 @@ const LSearch = () => {
         <div className="fullS">
             <div className="wrapper">
                 <div className="search_box">
-                    <input
-                        type="text"
-                        placeholder="what are you looking for?"
-                    />
+                    <input type="text" placeholder={`Try    "ER Diagrams"`} />
                     <i className="fas fa-search"></i>
                 </div>
             </div>

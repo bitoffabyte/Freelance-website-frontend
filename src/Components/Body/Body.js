@@ -2,7 +2,7 @@ import React from 'react';
 
 const Body = () => {
     return (
-        <div style={{ position: 'absolute', top: '100%' }}>
+        <div style={{ position: 'absolute', top: '100%', height: '100%' }}>
             <p>
                 lorem ipkjghasdfijghfsdkjghsdf erhgopieusrhgeauopirherpuoi
                 hepruoi hweropu ghwetrpuoihwetroiujheoiuj hearuo htgeruo
