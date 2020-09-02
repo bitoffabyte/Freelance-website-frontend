@@ -23,10 +23,13 @@ const Navbar = () => {
             <label htmlFor="click" className="menu-btn">
                 <i className="fas fa-bars"></i>
             </label>
-            <div className="search_box1">
-                <input type="text" placeholder={`Try    "ER Diagrams"`} />
-                <i className="fas fa-search"></i>
-            </div>
+
+            {offset >= document.body.scrollHeight * 0.5 ? (
+                <div className="search_box1">
+                    <input type="text" placeholder={`Try    "ER Diagrams"`} />
+                </div>
+            ) : null}
+
             <ul>
                 <li>
                     <a className="active" href="#">

@@ -44,10 +44,10 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
     color: #111;
-    background: #fff;
+    background: #ca3e47;
 }
 nav .menu-btn i {
-    color: #fff;
+    color: #ca3e47;
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -117,7 +117,7 @@ input[type='checkbox'] {
     font-weight: 700;
 }
 .onscroll {
-    background-color: #1b1b1b;
+    background-color: #313131;
     transition: all 0.5s;
     height: 90px;
 }
@@ -147,4 +147,13 @@ input[type='checkbox'] {
     right: 25px;
     color: #fff;
     font-size: 25px;
+}
+@media (max-width: 920px) {
+    .search_box1 {
+        margin: 0;
+        width: 90%;
+    }
+    .onscroll {
+        height: 120px;
+    }
 }
