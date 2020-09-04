@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
+import {
+    BrowserRouter as Router,
+    Link,
+    useLocation,
+    NavLink,
+} from 'react-router-dom';
 
 import './Navbar.css';
 
 const Navbar = () => {
     const [offset, setOffset] = useState(0);
-
     useEffect(() => {
         window.onscroll = () => {
             setOffset(window.pageYOffset);
         };
     }, []);
-
     return (
         <nav
             className={`${
                 offset >= document.body.scrollHeight * 0.5 ? 'onscroll' : ''
             }`}
         >
-            <div className="logo">FREELANCE</div>
+            <div className="logo">
+                <NavLink to="/">FREELANCE</NavLink>
+            </div>
             <input type="checkbox" id="click" />
             <label htmlFor="click" className="menu-btn">
                 <i className="fas fa-bars"></i>
@@ -32,15 +38,22 @@ const Navbar = () => {
 
             <ul>
                 <li>
-                    <a className="active" href="#">
-                        Home
-                    </a>
+                    <NavLink
+                        to="/login"
+                        activeClassName="active"
+                        className="asd"
+                    >
+                        Log In
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="#">Log In</a>
-                </li>
-                <li>
-                    <a href="#">Sign Up</a>
+                    <NavLink
+                        to="/signup"
+                        activeClassName="active"
+                        className="asd"
+                    >
+                        Sign Up
+                    </NavLink>
                 </li>
             </ul>
         </nav>

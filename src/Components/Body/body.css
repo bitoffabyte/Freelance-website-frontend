@@ -1,0 +1,25 @@
+.bodyDivs {
+    color: rgb(0, 0, 0);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.some-stuff {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+.details {
+    width: 25%;
+    margin: auto;
+    margin-top: 10%;
+}
+@media (max-width: 920px) {
+    .some-stuff {
+        flex-direction: column;
+    }
+    .details {
+        width: 80%;
+    }
+}

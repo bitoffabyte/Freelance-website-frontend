@@ -1,7 +1,7 @@
 import React from 'react';
 import './landing.css';
 import LSearch from './lSearch/LSearch';
-const LandingBg = () => {
+const LandingBg = (props) => {
     return (
         <div
             style={{
@@ -17,7 +17,7 @@ const LandingBg = () => {
             }}
             className="img"
         >
-            <LSearch />
+            <LSearch home={props.home} />
         </div>
     );
 };
