@@ -27,7 +27,7 @@ const Login = () => {
                     <span></span>
                     Submit
                 </a>
-                <p>
+                <p className="narayan">
                     Not a user ,
                     <NavLink to="/signup" className="asdddd">
                         Sign UP
